@@ -1,51 +1,43 @@
-Math Learning App for Elementary School
+# Math Learning App
 
-A Java desktop application designed to help elementary school students practice basic arithmetic. The app generates addition, subtraction, and multiplication exercises, provides a timer, and calculates the user’s score at the end.
+**Math Learning App** is a Java desktop application designed for elementary school students to practice basic math skills. It is built using **Java** and **JavaFX** for a graphical user interface.
 
-✨ Features
+---
 
-👤 User Name Input
+## Features
 
-The first screen allows the user to enter their name
+- **User Login:** Students enter their name before starting the game. Validation ensures that the game cannot start without a name.
+- **Math Exercises:**
+  - 5 randomly generated addition and subtraction problems with two-digit numbers.
+  - 5 multiplication problems using single-digit numbers.
+  - For subtraction, the program ensures the first number is larger than the second.
+  - For addition, the sum of numbers does not exceed 100.
+- **Timer:** A 60-second countdown for solving all 10 problems.
+- **Score Calculation:** Displays the number of correct answers and percentage after time expires or when the user submits early.
+- **Navigation:** Users can return to the start screen at any time to restart the game.
 
-Game cannot start unless a valid name is entered
+---
 
-📝 Math Exercises
+## How It Works
 
-5 addition/subtraction tasks with two-digit numbers
+1. **Start Screen:** The user enters their name and clicks "Start Game".
+2. **Game Window:** 
+   - 10 math problems appear (5 addition/subtraction, 5 multiplication).
+   - Users input their answers in the text fields next to each problem.
+   - A timer counts down from 60 seconds.
+3. **Submit:** Clicking "Submit" or waiting for the timer to expire calculates the score.
+4. **Results:** Shows the score in the format `X/10 (Y%)` along with a congratulatory message.
 
-Subtraction ensures the first number is greater than the second
+---
 
-Addition ensures the sum does not exceed 100
+## Technologies Used
 
-5 multiplication tasks with random numbers
+- Java 11+
+- JavaFX (for GUI)
+- Random number generation for problem creation
 
-Tasks are displayed with corresponding input fields for answers
 
-⏱️ Timer
 
-60-second countdown timer for completing the tasks
 
-User can submit answers before time expires
 
-📊 Results Calculation
 
-Displays results in the format 6/10 (60%)
-
-Updates results automatically after the timer ends or when user submits early
-
-🔄 Navigation
-
-Button to return to the start screen
-
-Easy restart of the game
-
-🛠️ Tech Stack
-
-Java (Swing for GUI)
-
-Random number generation for exercises
-
-Event handling for buttons and timer
-
-Basic validation for input fields
